@@ -20,6 +20,21 @@ is_true = True
 is_light_on = True
 ##Declare multiple variables on one line
 x, y, z = 5, 10, 15
+#---------------------------------------------------------------------------------------------------------
+#Excercise: Level 1
 
 #Check the data type of all your variables using type() built-in function
 print(type(first_name))
+
+#Compute the factorial of a given numbers.
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+    
+number = int(input("Enter a number to compute its factorial: "))
+result = factorial(number)
+print(result)
+
+
