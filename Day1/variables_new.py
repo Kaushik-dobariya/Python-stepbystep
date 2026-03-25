@@ -20,8 +20,13 @@ is_true = True
 is_light_on = True
 ##Declare multiple variables on one line
 x, y, z = 5, 10, 15
+#unpacking a collection
+EvenDigits=[2, 4, 6]
+#Global variables
+Gbl="Superb"
 
 #Excercise Level
+
 #Check the data type of all your variables using type() built-in function
 print(type(first_name))
 print(len(first_name))
@@ -33,3 +38,37 @@ elif len(first_name) < len(last_name):
     print("your last name is longer than your first name")
 else:
     print("your first and last names have the same length")
+
+
+
+#Multiple Variable Declaration
+print(x)
+print(y)
+print(z)
+
+#unpacking a collection
+a, b, c = EvenDigits
+print(a)        
+print(b)
+print(c)
+
+#Global variable Vs Local variable
+def my_function():
+    localVar = "Good"
+    print("Python is "+localVar)
+    
+my_function()
+
+print("Python is "+Gbl)
+
+
+#sentence in three vaeiables
+m=n=o="Hellow World"
+print(m)
+print(n)
+print(o)
+
+
+
+
+
