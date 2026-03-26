@@ -55,6 +55,15 @@ A lambda function can take any number of arguments, but can only have one expres
 
 Syntex: lambda arguments : expression
 
+Recursion: 
+
+The default limit is usually around 1000 recursive calls.
+we can raise recursive limit by setrecursivelimit()
+
+Generator:
+Generators are memory-efficient because they generate values on-the-fly instead of storing everything in memory.
+For large datasets, generators save memory.
+
 -->
 
 
