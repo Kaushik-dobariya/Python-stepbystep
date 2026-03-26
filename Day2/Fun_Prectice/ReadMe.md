@@ -48,5 +48,19 @@ Python Decorators:
 Decorators let you add extra behavior to a function, without changing the function's code.
 A decorator is a function that takes another function as input and returns a new function.
 
+Lambda Functions:
+
+A lambda function is a small anonymous function.
+A lambda function can take any number of arguments, but can only have one expression.
+
+Syntex: lambda arguments : expression
 
 -->
+
+
+
+
+
+
+
+     

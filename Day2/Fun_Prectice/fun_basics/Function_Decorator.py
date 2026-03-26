@@ -55,7 +55,9 @@ say_goodbye()
 # Decorator with functools.wraps
 import functools
 def decorator(func):    
-    @functools.wraps(func)                            # The @functools.wraps(func) decorator is used to preserve the metadata of the original function (func) when it is wrapped by the decorator. This means that attributes like __name__, __doc__, and others of the original function will be retained in the wrapper function, allowing for better debugging and introspection.
+    @functools.wraps(func)                              # The @functools.wraps(func) decorator is used to preserve the metadata of the original function (func) when it is wrapped 
+                                                        # by the decorator. This means that attributes like __name__, __doc__, and others of the original function will be retained 
+                                                        # in the wrapper function, allowing for better debugging and introspection.
     def wrapper(*args, **kwargs):
         print("Before the function is called.")
         result = func(*args, **kwargs)
@@ -64,10 +66,14 @@ def decorator(func):
     return wrapper
 @decorator
 def greet(name):
-    """This function greets the person with the given name."""  # This is a docstring that provides a description of the greet function. It explains that the function takes a name as an argument and returns a greeting message. The @functools.wraps(func) decorator ensures that this docstring, along with other metadata of the original function, is preserved in the wrapper function created by the decorator.
+    """This function greets the person with the given name."""  # This is a docstring that provides a description of the greet function. It explains that the function takes a name 
+                                                                # as an argument and returns a greeting message. The @functools.wraps(func) decorator ensures that this docstring, 
+                                                                # along with other metadata of the original function, is preserved in the wrapper function created by the decorator.
     print(f"Hello, {name}!")    
 greet("Bob")
-print(greet.__name__)  # This will print the name of the original function, which is "greet", instead of the wrapper function's name, which would be "wrapper" if @functools.wraps(func) was not used.
-print(greet.__doc__)   # This will print the docstring of the original function, which is "This function greets the person with the given name.", instead of None or the docstring of the wrapper function if @functools.wraps(func) was not used.      
+print(greet.__name__)                                    # This will print the name of the original function, which is "greet", instead of the wrapper function's name, which would 
+                                                         # be "wrapper" if @functools.wraps(func) was not used.
+print(greet.__doc__)                                     # This will print the docstring of the original function, which is "This function greets the person with the given name.",
+                                                         # instead of None or the docstring of the wrapper function if @functools.wraps(func) was not used.      
 
 
