@@ -1,10 +1,17 @@
 🖥️✨ Advanced Contact Book (Tkinter + File Saving + Modern UI)
+
 💡 New Features
+
 💾 Auto-save contacts to file (contacts.txt)
+
 📂 Load contacts on startup
+
 🎨 Modern UI (colors, fonts, layout)
+
 🔍 Search instantly
+
 🗑️ Delete with selection
+
 
 Clean app-like design
 
