@@ -5,13 +5,15 @@
 🎨 Modern UI (colors, fonts, layout)
 🔍 Search instantly
 🗑️ Delete with selection
+
 Clean app-like design
 
 🧪 What Makes This “Impressive” in Exams
 
 You can confidently say:
 
-“I implemented file handling (read/write) for persistent storage”
-“Used Tkinter for GUI with custom styling”
-“Applied modular functions for clean structure”
-“Data is stored using list of tuples”
+1. “I implemented file handling (read/write) for persistent storage”
+2. “Used Tkinter for GUI with custom styling”
+3. “Applied modular functions for clean structure”
+4. “Data is stored using list of tuples”
+   
